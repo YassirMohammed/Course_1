@@ -10,6 +10,9 @@ age = input("Enter your age: ")
 if age.isspace():
     input("Input wrong, click Enter to exit....")
     exit()
+if not age.isdigit():
+    input("Input wrong, click Enter to exit....")
+    exit()
 age_number = int(age)
 
 address = input("Enter your address: ")
