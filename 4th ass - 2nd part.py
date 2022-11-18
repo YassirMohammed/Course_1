@@ -30,7 +30,7 @@ if operation_input == "1" or operation_input == "+":
     elif sm == "r":
         print(round(sum_result))
     else:
-        input("Click Enter to exit")
+        input("Invalid Input, click Enter to exit")
         exit() 
 elif operation_input == "2" or operation_input == "-":
     sub_result = first_num - second_num
@@ -41,7 +41,7 @@ elif operation_input == "2" or operation_input == "-":
     elif sb == "r":
         print(round(sub_result))
     else:
-        input("Click Enter to exit")
+        input("Invalid Input, click Enter to exit")
         exit() 
 elif operation_input == "3" or operation_input == "*":
     mult_result = first_num * second_num
@@ -52,7 +52,7 @@ elif operation_input == "3" or operation_input == "*":
     elif ml == "r":
         print(round(mult_result))
     else:
-        input("Click Enter to exit")
+        input("Invalid Input, click Enter to exit")
         exit() 
 elif operation_input == "4" or operation_input == "/":
     if second_num != 0:
@@ -64,7 +64,7 @@ elif operation_input == "4" or operation_input == "/":
         elif di == "r":
             print(round(div_result))
         else:
-            input("Click Enter to exit")
+            input("Invalid Input, click Enter to exit")
             exit() 
     elif second_num == 0:
         input("Second number cannot be zero, click Enter to exit")
@@ -78,7 +78,7 @@ elif operation_input == "5" or operation_input == "^":
     elif ex == "r":
         print(round(exp_result))
     else:
-        input("Click Enter to exit")
+        input("Invalid Input, click Enter to exit")
         exit() 
 elif operation_input == "6" or operation_input == "%":
     rem_result = first_num % second_num
@@ -89,7 +89,7 @@ elif operation_input == "6" or operation_input == "%":
     elif re == "r":
         print(round(rem_result))
     else:
-        input("Click Enter to exit")
-        exit()   
+        input("Invalid Input, click Enter to exit")
+        exit()
 
 
