@@ -11,10 +11,11 @@ first_num = int(first_number)
 second_num = int(second_number)
 
 # operations:
-
+print('Choose one of the following arithmetic operations: ')
 list_of_characters = ["1|+", "2|-", "3|*", "4|/" , "5|^", "6|%"]
 for item in list_of_characters:
     print(item)
+print("")
 
 #getting operation from user
 operation_input = input("Choose the suitable character for the operation intended or its corresponding number: ")
@@ -32,7 +33,7 @@ if operation_input == "1" or operation_input == "+":
         input("Click Enter to exit")
         exit() 
 elif operation_input == "2" or operation_input == "-":
-    sub_result = first_num - second_number
+    sub_result = first_num - second_num
     print(sub_result)
     sb = input("Would you like to get the integer of the result or the round?(i or r) ")
     if sb == "i":
