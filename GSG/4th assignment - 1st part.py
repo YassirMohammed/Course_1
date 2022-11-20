@@ -7,7 +7,7 @@ if name.isspace() or name.isdigit():
     input("Input is space or int, click Enter to exit...")
     exit()
 
-if not name.isspace():
+elif not name.isspace():
     name_to_float = float(name)
     if type(name_to_float) == float:
         input("Input float, click Enter to exit...")
