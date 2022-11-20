@@ -1,14 +1,18 @@
 # Inputs
+# first and second numbers should be integers or floats
+
 first_number = input("Enter first number: ")
+if not first_number.isdigit() or not float(first_number) == float: 
+    input("Invalid First Entry, click Enter to exit")
+    exit()
 second_number = input("Enter second number: ")
 
-# first and second numbers should be integers
-if not first_number.isdigit() and not second_number.isdigit():
-    input("Invalid Entry, click Enter to exit")
-    exit()
 
-first_num = int(first_number)
-second_num = int(second_number)
+if not second_number.isdigit():
+    input("Invalid Second Entry, click Enter to exit")
+    exit()
+first_num = float(first_number)
+second_num = float(second_number)
 
 # operations:
 print('Choose one of the following arithmetic operations: ')
