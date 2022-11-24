@@ -1,0 +1,2 @@
+Writing a new line
+Adding a new line to the last one

@@ -46,6 +46,10 @@ print(type(b))
 
 # Converting to binary or base 16 'thuna'i, sadis 3ashri'
 
+# Since hexadecimal or base 16 is consisted of [0, 1, 2, ..., a, b, .. f], we should take this code as a string
+# To convert that string to a number in base 16 or binary systems, use the int() function and add a comma 
+# followed by 2 [for binary] and 16 for [hexadecimal]
+
 print(int("1001", 2)) #binary
 print(int("1ab", 16)) # base 16
 
