@@ -37,7 +37,7 @@ class Book:
             return 'Not Available'
 
 
-class Borrowing_Order:
+class Borrowing_Order(Book):
     def __init__(self, id, date, client_id, book_id, status):
         self.id = id
         self.date = date
@@ -46,8 +46,8 @@ class Borrowing_Order:
         self.status = status
 
 
-    # def create_borrow_order(self):
-    #     self.book_id = Book.title
+    def create_borrow_order(self):
+        self.book_id = Book
 
     
 

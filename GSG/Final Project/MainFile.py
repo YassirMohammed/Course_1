@@ -3,7 +3,7 @@ from Classes import Librarian
 from Classes import Book
 from Classes import Borrowing_Order
 
-
+# 1st, 2nd, and 3rd requests
 new_client = Client(id=1, fullName='Ahmed', age=29, phone_number= 592574153)
 new_librarian = Librarian(id=1, fullName='Yassir Muhammad', id_no=999, age=33, employment_type = False)
 
@@ -26,15 +26,16 @@ dictionary_of_books = {
 }
 
 
-print(list_of_books)
+# print(list_of_books)
 
-print(f'Type of employment for the librarian is: {new_librarian.get_employment_type()}')
+# print(f'Type of employment for the librarian is: {new_librarian.get_employment_type()}')
 
-# ask client which book to borrow
+# ask client which book to borrow [4th request]
 
 ask_client_which_book = input('Which of the above books you want to borrow? ')
 
-# check if book is available for borrowing from the above dictionary.
+# check if book is available for borrowing from the above dictionary [5th, 6th, 7th, and 8th requests]
+# [9th request not finished]
 
 if dictionary_of_books[book1][1] == ask_client_which_book:
     if (dictionary_of_books[book1][4]) == True:
@@ -63,3 +64,6 @@ elif dictionary_of_books[book4][1] == ask_client_which_book:
 
 else:
     print('input wrong or book is unavilable. Choose another book and check again')
+
+
+# 10th request [haven't begun yet]
