@@ -30,8 +30,8 @@ class Book:
         self.author = author
         self.status = status
 
-    def status_now(self):
-        if True:
+    def status_now(self,status):
+        if status ==True:
             return 'Available'
         else:
             return 'Not Available'
