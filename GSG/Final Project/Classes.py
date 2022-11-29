@@ -45,6 +45,10 @@ class Borrowing_Order:
         self.book_id = book_id
         self.status = status
 
+
+    # def create_borrow_order(self):
+    #     self.book_id = Book.title
+
     
 
 
