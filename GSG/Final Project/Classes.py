@@ -16,7 +16,7 @@ class Librarian:
         self.employment_type = employment_type
 
     def get_employment_type(self):
-        if True:
+        if self.employment_type == True:
             return 'Full'
         else:
             return 'Part'
@@ -30,8 +30,8 @@ class Book:
         self.author = author
         self.status = status
 
-    def status_now(self,status):
-        if status ==True:
+    def get_status(self):
+        if self.status == True:
             return 'Available'
         else:
             return 'Not Available'
