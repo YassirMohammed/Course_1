@@ -1,7 +1,4 @@
-from Classes import Client
-from Classes import Librarian
-from Classes import Book
-from Classes import Borrowing_Order
+from Classes import Client, Librarian, Book, Borrowing_Order
 
 # 1st, 2nd, and 3rd requests
 new_client = Client(id=1, fullName='Ahmed', age=29, phone_number= 592574153)
@@ -26,7 +23,7 @@ dictionary_of_books = {
 }
 
 
-# print(list_of_books)
+print(list_of_books)
 
 # print(f'Type of employment for the librarian is: {new_librarian.get_employment_type()}')
 
@@ -37,33 +34,42 @@ ask_client_which_book = input('Which of the above books you want to borrow? ')
 # check if book is available for borrowing from the above dictionary [5th, 6th, 7th, and 8th requests]
 # [9th request not finished]
 
-if dictionary_of_books[book1][1] == ask_client_which_book:
-    if (dictionary_of_books[book1][4]) == True:
+if dictionary_of_books[book1][1] == ask_client_which_book and (dictionary_of_books[book1][4]) == True:
         ask_for_id_info = input('What is your id? ')
         if int(ask_for_id_info) == new_client.id:
-            Borrowing_Order.create_borrow_order(self=1)            
+            borrow_order = (f'{new_client.fullName} borrowed {book1.title}')
+            print(borrow_order)           
 
-elif dictionary_of_books[book2][1] == ask_client_which_book:
-    if (dictionary_of_books[book2][4]) == True:
+elif dictionary_of_books[book2][1] == ask_client_which_book and (dictionary_of_books[book2][4]) == True:
         ask_for_id_info = input('What is your id? ')
         if int(ask_for_id_info) == new_client.id:
-            Borrowing_Order.create_borrow_order(self=1) 
+           borrow_order = (f'{new_client.fullName} borrowed {book2.title}')
+           print(borrow_order)           
+            
 
-
-elif dictionary_of_books[book3][1] == ask_client_which_book:
-    if (dictionary_of_books[book3][4]) == True:
+elif dictionary_of_books[book3][1] == ask_client_which_book and (dictionary_of_books[book3][4]) == True:
         ask_for_id_info = input('What is your id? ')
         if int(ask_for_id_info) == new_client.id:
-            Borrowing_Order.create_borrow_order(self=1) 
+            borrow_order = (f'{new_client.fullName} borrowed {book3.title}')
+            print(borrow_order)           
+ 
 
-elif dictionary_of_books[book4][1] == ask_client_which_book:
-    if (dictionary_of_books[book4][4]) == True:
+elif dictionary_of_books[book4][1] == ask_client_which_book and (dictionary_of_books[book4][4]) == True:
         ask_for_id_info = input('What is your id? ')
         if int(ask_for_id_info) == new_client.id:
-            Borrowing_Order.create_borrow_order(self=1) 
+            borrow_order = (f'{new_client.fullName} borrowed {book4.title}') 
+            print(borrow_order)           
 
 else:
-    print('input wrong or book is unavilable. Choose another book and check again')
+        print('input wrong or book is unavilable. Choose another book and check again')
 
+
+# check another solution {failed because dict values belong to class object}
+
+# for key, value in dictionary_of_books:
+#     if ask_client_which_book in value:
+#         print (dict[key][0])
+#     else:
+#         continue
 
 # 10th request [haven't begun yet]
