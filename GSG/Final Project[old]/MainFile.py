@@ -1,7 +1,7 @@
 from Classes import Client, Librarian, Book, Borrowing_Order
 
 # 1st, 2nd, and 3rd requests
-new_client = Client(id=1, fullName='Ahmed', age=29, phone_number= 592574153)
+new_client = Client(id=1, fullName='Ahmed', age=29, phone_number = 592574153)
 new_librarian = Librarian(id=1, fullName='Yassir Muhammad', id_no=999, age=33, employment_type = False)
 
 book1 = Book(id=1, title='The Subtle Art', description='Self-Development', author='Person1', status= True)
