@@ -16,10 +16,11 @@ class ClientOps:
             client_name = Clients(full_name=full_name, age=age, id_no=id_no, phone_number=phone_number,identifier=self.id_counter)
             self.id_counter = self.id_counter + 1
             self.clients_list.append(client_name)
+            return self.clients_list
 
 class LibrarianOps():
     librarians_list:list[Librarian] = []
-
+    id_counter = 1
 
     def add_librarian(self, full_name:str, age:int, id_no, employment_type):
 
